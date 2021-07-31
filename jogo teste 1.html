@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase+"\n");
+        //pulaLinha();
+    }
+	function sorteia(n) {
+	return Math.round(Math.random() * n);
+	}
+
+	var numeroSorteado = sorteia( 15)
+
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    if(chute == numeroSorteado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " +"\n" + numeroSorteado);
+		alert("<h1>PARABÉNS</h1>");
+    } else {
+
+        mostra("Você errou! Eu tinha pensado no" +"\n"+ numeroSorteado); alert("Que Pena")
+    }
+</script> 
+
+
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 100);
